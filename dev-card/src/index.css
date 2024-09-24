@@ -1,13 +1,71 @@
-body {
+/* Import font */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500&display=swap");
+
+/* Global reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Body */
+body {
+  font-family: "IBM Plex Mono", sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Html */
+html {
+  font-size: 62.5%;
+}
+
+/* Heading primary */
+h1 {
+  margin-bottom: 1.2rem;
+}
+
+/* Card */
+.card {
+  width: 45rem;
+  margin: 4rem;
+  border: 0.4rem solid #222;
+}
+
+/* card after el */
+.card::after {
+  content: "";
+  display: block;
+}
+
+/* Avatar */
+.avatar {
+  width: 100%;
+  display: block;
+}
+
+/* Data */
+.data {
+  padding: 3.2rem;
+  padding-top: 2.4rem;
+}
+
+/* skill-list and skill */
+.skill-list,
+.skill {
+  display: flex;
+  gap: 8.0rem;
+}
+
+/* skill list */
+.skill-list {
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.skill {
+  padding: 0.2rem 1.2rem;
+  border-radius: 0.5rem;
+  align-items: center;
+  font-weight: 500;
 }
