@@ -27,7 +27,10 @@ function App() {
 // aditioner components
 
 // Avatar
-function Avatar() {}
+function Avatar() {
+  // dev photo
+  return <img className="avatar" src="profilna-1.jpeg" alt="Momcilo Nikolic dev photo"/>
+}
 
 // Intro 
 function Intro() {}
