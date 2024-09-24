@@ -18,7 +18,7 @@ function App() {
         {/* intro */}
         <Intro />
         {/* dev skill list */}
-        <skillList />
+        <SkillList />
       </div>
     </div>
   );
@@ -42,7 +42,9 @@ function Avatar() {
 function Intro() {
   return (
     <div>
+      {/* dev name */}
       <h1>Momcilo Nikolic</h1>
+      {/* dev intro */}
       <p>
         My name is Momcilo Nikolic. I am a developer currently in the process of
         entering the world of React development.
@@ -52,10 +54,30 @@ function Intro() {
 }
 
 // Skill List
-function SkillList() {}
+function SkillList() {
+  return (
+    // dev skill list
+    <div className="skill-list">
+      <Skill skill="React" emoji="💪" color="#88dded" />
+      <Skill skill="Html + CSS" emoji="💪" color="#FF4500" />
+      <Skill skill="JS" emoji="💪" color="#F0DB4F" />
+      <Skill skill="SCCS" emoji="💪" color="#CD6799" />
+      <Skill skill="Hugo" emoji="💪" color="#CD6799" />
+      <Skill skill="jQuery" emoji="💪" color="#333333" />
+    </div>
+  );
+}
 
 // skill
-function Skill() {}
+function Skill(props) {
+  return (
+    // dev skill
+    <div className="skill" style={{ backgroundColor: props.color }}>
+      <span>{props.skill}</span>
+      <span>{props.emoji}</span>
+    </div>
+  );
+}
 
 // render root method
 const root = ReactDOM.createRoot(document.querySelector("#root"));
