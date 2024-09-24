@@ -12,16 +12,16 @@ function App() {
     // card component
     <div className="card">
       {/* avatar photo */}
-      <Avatar/> 
+      <Avatar />
       {/* data */}
       <div className="data">
         {/* intro */}
-        <Intro/>
+        <Intro />
         {/* dev skill list */}
-        <skillList/>
+        <skillList />
       </div>
     </div>
-  )
+  );
 }
 
 // aditioner components
@@ -29,11 +29,27 @@ function App() {
 // Avatar
 function Avatar() {
   // dev photo
-  return <img className="avatar" src="profilna-1.jpeg" alt="Momcilo Nikolic dev photo"/>
+  return (
+    <img
+      className="avatar"
+      src="profilna-1.jpeg"
+      alt="Momcilo Nikolic dev photo"
+    />
+  );
 }
 
-// Intro 
-function Intro() {}
+// Intro
+function Intro() {
+  return (
+    <div>
+      <h1>Momcilo Nikolic</h1>
+      <p>
+        My name is Momcilo Nikolic. I am a developer currently in the process of
+        entering the world of React development.
+      </p>
+    </div>
+  );
+}
 
 // Skill List
 function SkillList() {}

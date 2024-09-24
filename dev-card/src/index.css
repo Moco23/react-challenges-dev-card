@@ -54,7 +54,7 @@ h1 {
 .skill-list,
 .skill {
   display: flex;
-  gap: 8.0rem;
+  gap: 8rem;
 }
 
 /* skill list */
